@@ -1,0 +1,27 @@
+name: Auto Activity
+
+# تشغيل العمل عند أي push على الفرع الرئيسي
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # جدول يومي (UTC)
+    - cron: '0 12 * * *'
+
+jobs:
+  keep-active:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Commit a timestamp to keep activity
+        run: |
+          echo "Last update: $(date -u)" > ACTIVITY.md
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add ACTIVITY.md
+          git commit -m "Update activity timestamp [ci skip]" || echo "No changes to commit"
+          git push origin main
