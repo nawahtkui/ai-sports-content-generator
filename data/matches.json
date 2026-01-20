@@ -1,4 +1,4 @@
 [
-  { "slug": "alahly-vs-alhilal", "home": "AlAhly", "away": "AlHilal", "date": "2026-01-20", "score": "2-1", "summary": "مباراة مثيرة بين الأهلي والهلال." },
-  { "slug": "alnasr-vs-esperance", "home": "AlNasr", "away": "Esperance", "date": "2026-01-21", "score": "3-2", "summary": "النصر والتـرجـي في مباراة مشوقة." }
+  { "slug": "alahly-vs-alhilal", "home": "AlAhly", "away": "AlHilal", "date": "2026-01-20", "score": "2-1", "summary": "مباراة مثيرة بين الأهلي والهلال.", "season": "season-2025-2026" },
+  { "slug": "alnasr-vs-esperance", "home": "AlNasr", "away": "Esperance", "date": "2026-01-21", "score": "3-2", "summary": "النصر والترجي في مباراة مشوقة.", "season": "season-2025-2026" }
 ]
