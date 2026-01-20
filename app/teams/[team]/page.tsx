@@ -6,7 +6,8 @@ interface Params {
 }
 
 export default function TeamPage({ params }: Params) {
-  const teamSlug = params.team.toLowerCase();
+  // معالجة slug للتأكد من أنه صحيح
+  const teamSlug = decodeURIComponent(params.team).toLowerCase().trim();
 
   // جلب كل المباريات التي يشارك فيها الفريق
   const teamMatches = matches.filter(
@@ -14,15 +15,21 @@ export default function TeamPage({ params }: Params) {
       m.home.toLowerCase() === teamSlug || m.away.toLowerCase() === teamSlug
   );
 
+  // إذا لم توجد مباريات للفريق، عرض صفحة 404
   if (teamMatches.length === 0) return notFound();
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
-      <h1>Matches for {teamSlug}</h1>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px", margin: "0 auto" }}>
+      <h1>Matches for {teamSlug.charAt(0).toUpperCase() + teamSlug.slice(1)}</h1>
       <ul style={{ marginTop: "2rem", lineHeight: "2" }}>
         {teamMatches.map((match) => (
           <li key={match.slug}>
-            <strong>{match.home} vs {match.away}</strong>
+            <a 
+              href={`/matches/${match.slug}`} 
+              style={{ textDecoration: "underline", color: "#0070f3" }}
+            >
+              <strong>{match.home} vs {match.away}</strong>
+            </a>
             <div style={{ fontSize: "0.9rem", color: "#666" }}>
               {match.date} — {match.score}
             </div>
@@ -32,4 +39,5 @@ export default function TeamPage({ params }: Params) {
     </main>
   );
 }
+
 
