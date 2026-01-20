@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import teams from "@/data/teams.json";
-import matches from "@/data/matches.json";
+import teams from "../../../data/teams.json";
+import matches from "../../../data/matches.json";
 
 interface Params {
   params: { team: string };
@@ -9,28 +9,28 @@ interface Params {
 export default function TeamPage({ params }: Params) {
   const teamSlug = params.team.toLowerCase();
 
-  const team = teams.find(t => t.id.toLowerCase() === teamSlug);
-  if (!team) return notFound();
+  const teamInfo = teams.find((t) => t.slug.toLowerCase() === teamSlug);
+  if (!teamInfo) return notFound();
 
   const teamMatches = matches.filter(
-    m => m.home.toLowerCase() === teamSlug || m.away.toLowerCase() === teamSlug
+    (m) => m.home.toLowerCase() === teamSlug || m.away.toLowerCase() === teamSlug
   );
 
   return (
-    <main style={{ padding: "20px", fontFamily: "sans-serif", maxWidth: "900px" }}>
-      <h1>{team.name} - {team.region}</h1>
-      {teamMatches.length === 0 ? (
-        <p>لا توجد مباريات لهذا الفريق حتى الآن.</p>
-      ) : (
-        <ul style={{ lineHeight: "2" }}>
-          {teamMatches.map(match => (
-            <li key={match.slug}>
-              <strong>{match.home} vs {match.away}</strong> — {match.date} — {match.score}
-              <p>{match.summary}</p>
-            </li>
-          ))}
-        </ul>
-      )}
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
+      <h1>{teamInfo.name}</h1>
+      <p>البلد: {teamInfo.country}</p>
+      <h2 style={{ marginTop: "2rem" }}>المباريات:</h2>
+      <ul>
+        {teamMatches.map((match) => (
+          <li key={match.slug}>
+            <strong>{match.home} vs {match.away}</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>
+              {match.date} — {match.score}
+            </div>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }
