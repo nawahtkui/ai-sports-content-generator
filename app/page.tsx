@@ -1,27 +1,36 @@
-export default function Page() {
-  const sampleArticle = {
-    title: "Arsenal vs Chelsea - ملخص المباراة",
-    date: "2026-01-20",
-    content: `واجه فريق Arsenal فريق Chelsea في مباراة مثيرة انتهت بنتيجة 2-1. 
-    الأهداف سجلها اللاعبون في الدقيقة 15 و63 و78، وقدّم الفريقان أداءً رائعًا أمام جماهيرهم.`
-  };
+import matches from "../data/matches.json";
+
+export default function HomePage() {
+  // عرض آخر 3 مباريات فقط (يمكن تعديل العدد)
+  const latestMatches = matches.slice(-3).reverse();
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h1>مرحبا بك في AI Sports Content Generator!</h1>
-      <p>هذا المشروع يعرض محتوى رياضي تلقائيًا. مثال لمباراة:</p>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px", margin: "0 auto" }}>
+      <h1>Welcome to AI Sports Content Generator!</h1>
+      <p style={{ color: "#666", marginTop: "1rem" }}>
+        This project displays automated sports content. Check out the latest matches below:
+      </p>
 
-      <div style={{
-        border: "1px solid #ccc",
-        padding: "1rem",
-        borderRadius: "8px",
-        marginTop: "1rem",
-        backgroundColor: "#f9f9f9"
-      }}>
-        <h2>{sampleArticle.title}</h2>
-        <p><strong>التاريخ:</strong> {sampleArticle.date}</p>
-        <p>{sampleArticle.content}</p>
-      </div>
+      <ul style={{ marginTop: "2rem", lineHeight: "2" }}>
+        {latestMatches.map((match) => (
+          <li key={match.slug}>
+            <a 
+              href={`/matches/${match.slug}`} 
+              style={{ textDecoration: "underline", color: "#0070f3" }}
+            >
+              <strong>{match.home} vs {match.away}</strong>
+            </a>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>
+              {match.date} — {match.score}
+            </div>
+            <p style={{ marginTop: "0.5rem" }}>{match.summary}</p>
+          </li>
+        ))}
+      </ul>
+
+      <a href="/matches" style={{ display: "inline-block", marginTop: "2rem", color: "#0070f3", textDecoration: "underline" }}>
+        See all matches →
+      </a>
     </main>
   );
 }
