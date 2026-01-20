@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-sports-content-generator-lvfi.vercel.app/sitemap.xml
