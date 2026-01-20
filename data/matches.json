@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "arsenal-vs-chelsea",
+    "home": "Arsenal",
+    "away": "Chelsea",
+    "date": "2026-01-20",
+    "score": "2-1",
+    "summary": "Arsenal defeated Chelsea in an exciting match with late drama."
+  },
+  {
+    "slug": "real-madrid-vs-barcelona",
+    "home": "Real Madrid",
+    "away": "Barcelona",
+    "date": "2026-01-21",
+    "score": "3-2",
+    "summary": "A thrilling El Clásico with goals, intensity, and brilliant performances."
+  }
+]
