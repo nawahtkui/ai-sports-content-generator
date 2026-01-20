@@ -1,30 +1,23 @@
-import matches from "../../../data/matches.json";
 import { notFound } from "next/navigation";
+import seasons from "../../../data/seasons.json";
+import matches from "../../../data/matches.json";
 
-interface Props {
-  params: { season: string };
-}
+export default function SeasonPage({ params }: { params: { season: string } }) {
+  const seasonSlug = params.season;
+  const season = seasons.find((s) => s.slug === seasonSlug);
+  if (!season) return notFound();
 
-export default function SeasonPage({ params }: Props) {
-  const seasonMatches = matches.filter(
-    (m) => m.season === params.season
-  );
-
-  if (seasonMatches.length === 0) return notFound();
+  const seasonMatches = matches.filter((m) => m.date.startsWith(seasonSlug.split("-")[0]));
 
   return (
-    <main style={{ padding: "2rem", maxWidth: "1000px", margin: "auto" }}>
-      <h1>Season {params.season}</h1>
-
-      <ul style={{ marginTop: "2rem", lineHeight: "2" }}>
+    <main>
+      <h1>{season.name}</h1>
+      <ul>
         {seasonMatches.map((match) => (
           <li key={match.slug}>
-            <strong>
-              {match.home} vs {match.away}
-            </strong>
-            <div style={{ color: "#666" }}>
-              {match.date} — {match.score} — {match.league}
-            </div>
+            <strong>{match.home} vs {match.away}</strong>
+            <div>{match.date} — {match.score}</div>
+            <p>{match.summary}</p>
           </li>
         ))}
       </ul>
