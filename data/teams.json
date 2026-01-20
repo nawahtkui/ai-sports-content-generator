@@ -1,19 +1,7 @@
 [
-  {
-    "id": "133739",
-    "name": "Real Madrid",
-    "country": "Spain",
-    "continent": "Europe",
-    "founded": 1902,
-    "stadium": "Santiago Bernabéu"
-  },
-  {
-    "id": "133602",
-    "name": "Barcelona",
-    "country": "Spain",
-    "continent": "Europe",
-    "founded": 1899,
-    "stadium": "Camp Nou"
-  }
+  { "id": "alhilal", "name": "Al Hilal", "continent": "Asia", "region": "Saudi Arabia" },
+  { "id": "alahly", "name": "Al Ahly", "continent": "Africa", "region": "Egypt" },
+  { "id": "alnassr", "name": "Al Nassr", "continent": "Asia", "region": "Saudi Arabia" },
+  { "id": "alittihad", "name": "Al Ittihad", "continent": "Asia", "region": "Saudi Arabia" },
+  { "id": "alqadsia", "name": "Al Qadsia", "continent": "Asia", "region": "Kuwait" }
 ]
-

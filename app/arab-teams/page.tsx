@@ -7,10 +7,10 @@ export default function ArabTeamsPage() {
   );
 
   return (
-    <main style={{ padding: "20px" }}>
+    <main style={{ padding: "20px", fontFamily: "sans-serif" }}>
       <h1>الفرق العربية والخليجية</h1>
       {arabTeams.length === 0 && <p>لا توجد فرق عربية مضافة بعد.</p>}
-      <ul>
+      <ul style={{ lineHeight: "2" }}>
         {arabTeams.map(team => (
           <li key={team.id}>
             <Link href={`/teams/${team.id}`}>{team.name} ({team.region})</Link>
