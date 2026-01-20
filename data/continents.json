@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "europe",
+    "name": "Europe",
+    "sports": ["Football"]
+  },
+  {
+    "slug": "south-america",
+    "name": "South America",
+    "sports": ["Football"]
+  },
+  {
+    "slug": "asia",
+    "name": "Asia",
+    "sports": ["Football"]
+  }
+]
+
