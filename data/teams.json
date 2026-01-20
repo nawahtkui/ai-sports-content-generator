@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "real-madrid",
+    "name": "Real Madrid",
+    "country": "Spain",
+    "continent": "Europe",
+    "founded": 1902,
+    "stadium": "Santiago Bernabéu",
+    "description": "Real Madrid is one of the most successful football clubs in history.",
+    "badge": "https://www.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png"
+  },
+  {
+    "slug": "arsenal",
+    "name": "Arsenal",
+    "country": "England",
+    "continent": "Europe",
+    "founded": 1886,
+    "stadium": "Emirates Stadium",
+    "description": "Arsenal is a historic English football club based in London.",
+    "badge": "https://www.thesportsdb.com/images/media/team/badge/a1af2i1557005128.png"
+  }
+]
