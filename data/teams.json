@@ -1,47 +1,19 @@
 [
   {
-    "slug": "real-madrid",
+    "id": "133739",
     "name": "Real Madrid",
     "country": "Spain",
     "continent": "Europe",
-    "league": "La Liga",
     "founded": 1902,
-    "stadium": "Santiago Bernabéu",
-    "titles": 35,
-    "description": "Real Madrid is one of the most successful football clubs in history."
+    "stadium": "Santiago Bernabéu"
   },
   {
-    "slug": "barcelona",
+    "id": "133602",
     "name": "Barcelona",
     "country": "Spain",
     "continent": "Europe",
-    "league": "La Liga",
     "founded": 1899,
-    "stadium": "Camp Nou",
-    "titles": 27,
-    "description": "FC Barcelona is known for its attacking football and famous academy La Masia."
-  },
-  {
-    "slug": "arsenal",
-    "name": "Arsenal",
-    "country": "England",
-    "continent": "Europe",
-    "league": "Premier League",
-    "founded": 1886,
-    "stadium": "Emirates Stadium",
-    "titles": 13,
-    "description": "Arsenal is one of England's most historic football clubs."
-  },
-  {
-    "slug": "chelsea",
-    "name": "Chelsea",
-    "country": "England",
-    "continent": "Europe",
-    "league": "Premier League",
-    "founded": 1905,
-    "stadium": "Stamford Bridge",
-    "titles": 6,
-    "description": "Chelsea has been one of the dominant clubs in England in recent decades."
+    "stadium": "Camp Nou"
   }
 ]
 
