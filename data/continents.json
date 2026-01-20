@@ -1,18 +1,6 @@
 [
-  {
-    "slug": "europe",
-    "name": "Europe",
-    "sports": ["Football"]
-  },
-  {
-    "slug": "south-america",
-    "name": "South America",
-    "sports": ["Football"]
-  },
-  {
-    "slug": "asia",
-    "name": "Asia",
-    "sports": ["Football"]
-  }
+  { "slug": "asia", "name": "آسيا" },
+  { "slug": "africa", "name": "أفريقيا" },
+  { "slug": "europe", "name": "أوروبا" },
+  { "slug": "america", "name": "أمريكا الشمالية والجنوبية" }
 ]
-

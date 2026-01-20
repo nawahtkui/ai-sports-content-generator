@@ -1,6 +1,6 @@
 [
-  { "slug": "alahly", "name": "الأهلي", "country": "مصر" },
-  { "slug": "alhilal", "name": "الهلال", "country": "السعودية" },
-  { "slug": "alnasr", "name": "النصر", "country": "السعودية" },
-  { "slug": "esperance", "name": "الترجي", "country": "تونس" }
+  { "slug": "alahly", "name": "AlAhly", "continentSlug": "africa" },
+  { "slug": "alhilal", "name": "AlHilal", "continentSlug": "asia" },
+  { "slug": "arsenal", "name": "Arsenal", "continentSlug": "europe" },
+  { "slug": "barcelona", "name": "Barcelona", "continentSlug": "europe" }
 ]

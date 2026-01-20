@@ -1,24 +1,17 @@
-import teams from "@/data/teams.json";
+import continents from "../../data/continents.json";
 import Link from "next/link";
-
-// استخراج القارات بشكل فريد
-const continents = Array.from(new Set(teams.map(t => t.continent)));
 
 export default function ContinentsPage() {
   return (
-    <main style={{ padding: "20px" }}>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
       <h1>القارات</h1>
-      <ul>
-        {continents.map(continent => (
-          <li key={continent}>
-            <Link href={`/continents/${continent.toLowerCase()}`}>
-              {continent}
-            </Link>
+      <ul style={{ marginTop: "1rem" }}>
+        {continents.map((continent) => (
+          <li key={continent.slug}>
+            <Link href={`/continents/${continent.slug}`}>{continent.name}</Link>
           </li>
         ))}
       </ul>
     </main>
   );
 }
-
-

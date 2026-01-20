@@ -1,5 +1,6 @@
-import teams from "@/data/teams.json";
-import Link from "next/link";
+import { notFound } from "next/navigation";
+import continents from "../../../data/continents.json";
+import teams from "../../../data/teams.json"; // يجب أن يحتوي ملف teams.json على كل الفرق مع continentSlug
 
 interface Params {
   params: { continent: string };
@@ -7,25 +8,20 @@ interface Params {
 
 export default function ContinentPage({ params }: Params) {
   const continentSlug = params.continent.toLowerCase();
-  const continentTeams = teams.filter(
-    t => t.continent.toLowerCase() === continentSlug
-  );
+  const continentInfo = continents.find(c => c.slug.toLowerCase() === continentSlug);
 
-  if (continentTeams.length === 0) {
-    return <h2>القارة غير موجودة</h2>;
-  }
+  if (!continentInfo) return notFound();
+
+  const continentTeams = teams.filter(t => t.continentSlug === continentSlug);
 
   return (
-    <main style={{ padding: "20px" }}>
-      <h1>فرق القارة: {continentTeams[0].continent}</h1>
-      <ul>
-        {continentTeams.map(team => (
-          <li key={team.id}>
-            <Link href={`/teams/${team.id}`}>{team.name}</Link>
-          </li>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
+      <h1>الفرق في {continentInfo.name}</h1>
+      <ul style={{ marginTop: "1rem" }}>
+        {continentTeams.map((team) => (
+          <li key={team.slug}>{team.name}</li>
         ))}
       </ul>
     </main>
   );
 }
-
