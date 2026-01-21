@@ -1,23 +1,20 @@
 import matches from "../../../data/matches.json";
-import Link from "next/link";
 
-interface Params {
-  params: { season: string };
-}
-
-export default function SeasonPage({ params }: Params) {
-  const seasonMatches = matches.filter(m => m.date.startsWith(params.season));
-  if (seasonMatches.length === 0) return <p>لا توجد مباريات لهذا الموسم.</p>;
+export default function SeasonPage({ params }) {
+  const seasonMatches = matches.filter(
+    m => m.date.startsWith(params.season)
+  );
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>المباريات لموسم {params.season}</h1>
-      <ul>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
+      <h1>مباريات موسم {params.season}</h1>
+      <ul style={{ marginTop: "2rem", lineHeight: "2" }}>
         {seasonMatches.map(match => (
           <li key={match.slug}>
-            <Link href={`/matches/${match.slug}`}>
-              {match.home} vs {match.away} — {match.date}
-            </Link>
+            <strong>{match.home} vs {match.away}</strong>
+            <div style={{ fontSize: "0.9rem", color: "#666" }}>
+              {match.date} — {match.score}
+            </div>
           </li>
         ))}
       </ul>
