@@ -1,22 +1,6 @@
 [
-  {"slug":"arsenal","name":"Arsenal","region":"Europe / England"},
-  {"slug":"chelsea","name":"Chelsea","region":"Europe / England"},
-  {"slug":"man-united","name":"Man United","region":"Europe / England"},
-  {"slug":"liverpool","name":"Liverpool","region":"Europe / England"},
-  {"slug":"real-madrid","name":"Real Madrid","region":"Europe / Spain"},
-  {"slug":"barcelona","name":"Barcelona","region":"Europe / Spain"},
-  {"slug":"juventus","name":"Juventus","region":"Europe / Italy"},
-  {"slug":"inter","name":"Inter","region":"Europe / Italy"},
-  {"slug":"psg","name":"PSG","region":"Europe / France"},
-  {"slug":"marseille","name":"Marseille","region":"Europe / France"},
-  {"slug":"al-ahly","name":"Al Ahly","region":"Africa / Egypt"},
-  {"slug":"zamalek","name":"Zamalek","region":"Africa / Egypt"},
-  {"slug":"ismaily","name":"Ismaily","region":"Africa / Egypt"},
-  {"slug":"al-ittihad","name":"Al Ittihad","region":"Asia / Saudi Arabia"},
-  {"slug":"al-nassr","name":"Al Nassr","region":"Asia / Saudi Arabia"},
-  {"slug":"al-hilal","name":"Al Hilal","region":"Asia / Saudi Arabia"},
-  {"slug":"al-ain","name":"Al Ain","region":"Asia / UAE"},
-  {"slug":"shabab-al-ahli","name":"Shabab Al Ahli","region":"Asia / UAE"},
-  {"slug":"fenerbahce","name":"Fenerbahce","region":"Europe / Turkey"},
-  {"slug":"galatasaray","name":"Galatasaray","region":"Europe / Turkey"}
+  { "slug": "arsenal", "name": "Arsenal" },
+  { "slug": "chelsea", "name": "Chelsea" },
+  { "slug": "real-madrid", "name": "Real Madrid" },
+  { "slug": "barcelona", "name": "Barcelona" }
 ]
