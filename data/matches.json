@@ -6,16 +6,30 @@
     "date": "2026-01-20",
     "score": "2-1",
     "summary": "Arsenal defeated Chelsea in an exciting match with late drama.",
-    "season": "2025-2026"
+    "season": "2025-2026",
+    "continent": "europe"
   },
   {
-    "slug": "real-madrid-vs-barcelona",
-    "home": "Real Madrid",
-    "away": "Barcelona",
-    "date": "2026-01-21",
-    "score": "3-2",
-    "summary": "A thrilling El Clásico with goals, intensity, and brilliant performances.",
-    "season": "2025-2026"
+    "slug": "al-ahly-vs-zamalek",
+    "home": "Al Ahly",
+    "away": "Zamalek",
+    "date": "2026-01-22",
+    "score": "1-0",
+    "summary": "Classic Egyptian derby with high tension and passionate fans.",
+    "season": "2025-2026",
+    "continent": "africa",
+    "teamRegion": "arab"
+  },
+  {
+    "slug": "al-nassr-vs-al-hilal",
+    "home": "Al Nassr",
+    "away": "Al Hilal",
+    "date": "2026-01-23",
+    "score": "2-2",
+    "summary": "Saudi giants clash ends in a thrilling draw.",
+    "season": "2025-2026",
+    "continent": "asia",
+    "teamRegion": "gulf"
   }
 ]
 
