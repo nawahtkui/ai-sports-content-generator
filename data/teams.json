@@ -1,6 +1,51 @@
 [
-  { "slug": "alahly", "name": "AlAhly", "continentSlug": "africa" },
-  { "slug": "alhilal", "name": "AlHilal", "continentSlug": "asia" },
-  { "slug": "arsenal", "name": "Arsenal", "continentSlug": "europe" },
-  { "slug": "barcelona", "name": "Barcelona", "continentSlug": "europe" }
+  {
+    "slug": "arsenal",
+    "name": "Arsenal",
+    "region": "Europe",
+    "country": "England"
+  },
+  {
+    "slug": "chelsea",
+    "name": "Chelsea",
+    "region": "Europe",
+    "country": "England"
+  },
+  {
+    "slug": "real-madrid",
+    "name": "Real Madrid",
+    "region": "Europe",
+    "country": "Spain"
+  },
+  {
+    "slug": "barcelona",
+    "name": "Barcelona",
+    "region": "Europe",
+    "country": "Spain"
+  },
+  {
+    "slug": "al-ahly",
+    "name": "Al Ahly",
+    "region": "Africa",
+    "country": "Egypt"
+  },
+  {
+    "slug": "al-hilal",
+    "name": "Al Hilal",
+    "region": "Asia",
+    "country": "Saudi Arabia"
+  },
+  {
+    "slug": "al-nassr",
+    "name": "Al Nassr",
+    "region": "Asia",
+    "country": "Saudi Arabia"
+  },
+  {
+    "slug": "zamalek",
+    "name": "Zamalek",
+    "region": "Africa",
+    "country": "Egypt"
+  }
 ]
+
