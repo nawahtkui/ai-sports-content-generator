@@ -1,4 +1,21 @@
 [
-  { "slug": "alahly-vs-alhilal", "home": "AlAhly", "away": "AlHilal", "date": "2026-01-20", "score": "2-1", "summary": "مباراة مثيرة بين الأهلي والهلال.", "season": "season-2025-2026" },
-  { "slug": "alnasr-vs-esperance", "home": "AlNasr", "away": "Esperance", "date": "2026-01-21", "score": "3-2", "summary": "النصر والترجي في مباراة مشوقة.", "season": "season-2025-2026" }
+  {
+    "slug": "arsenal-vs-chelsea",
+    "home": "Arsenal",
+    "away": "Chelsea",
+    "date": "2026-01-20",
+    "score": "2-1",
+    "summary": "Arsenal defeated Chelsea in an exciting match with late drama.",
+    "season": "2025-2026"
+  },
+  {
+    "slug": "real-madrid-vs-barcelona",
+    "home": "Real Madrid",
+    "away": "Barcelona",
+    "date": "2026-01-21",
+    "score": "3-2",
+    "summary": "A thrilling El Clásico with goals, intensity, and brilliant performances.",
+    "season": "2025-2026"
+  }
 ]
+
