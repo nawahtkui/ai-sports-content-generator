@@ -1,35 +1,12 @@
 [
-  {
-    "slug": "arsenal-vs-chelsea",
-    "home": "Arsenal",
-    "away": "Chelsea",
-    "date": "2026-01-20",
-    "score": "2-1",
-    "summary": "Arsenal defeated Chelsea in an exciting match with late drama.",
-    "season": "2025-2026",
-    "continent": "europe"
-  },
-  {
-    "slug": "al-ahly-vs-zamalek",
-    "home": "Al Ahly",
-    "away": "Zamalek",
-    "date": "2026-01-22",
-    "score": "1-0",
-    "summary": "Classic Egyptian derby with high tension and passionate fans.",
-    "season": "2025-2026",
-    "continent": "africa",
-    "teamRegion": "arab"
-  },
-  {
-    "slug": "al-nassr-vs-al-hilal",
-    "home": "Al Nassr",
-    "away": "Al Hilal",
-    "date": "2026-01-23",
-    "score": "2-2",
-    "summary": "Saudi giants clash ends in a thrilling draw.",
-    "season": "2025-2026",
-    "continent": "asia",
-    "teamRegion": "gulf"
-  }
+  {"slug":"arsenal-vs-chelsea","home":"Arsenal","away":"Chelsea","date":"2026-01-20","score":"2-1","summary":"مباراة مثيرة في الدوري الإنجليزي شهدت أداء رائع من كلا الفريقين."},
+  {"slug":"real-madrid-vs-barcelona","home":"Real Madrid","away":"Barcelona","date":"2026-01-21","score":"3-2","summary":"كلاسيكو إسباني مثير مليء بالأهداف والحماس."},
+  {"slug":"al-ahly-vs-al-ittihad","home":"Al Ahly","away":"Al Ittihad","date":"2026-01-22","score":"1-0","summary":"مواجهة عربية قوية ضمن الدوري الممتاز."},
+  {"slug":"al-nassr-vs-al-hilal","home":"Al Nassr","away":"Al Hilal","date":"2026-01-23","score":"2-2","summary":"ديربي سعودي مثير انتهى بالتعادل."},
+  {"slug":"man-united-vs-liverpool","home":"Man United","away":"Liverpool","date":"2026-01-24","score":"1-1","summary":"مواجهة كلاسيكية في الدوري الإنجليزي انتهت بالتعادل."},
+  {"slug":"juventus-vs-inter","home":"Juventus","away":"Inter","date":"2026-01-25","score":"2-0","summary":"ديربي إيطالي حماسي فاز به يوفنتوس."},
+  {"slug":"psg-vs-marseille","home":"PSG","away":"Marseille","date":"2026-01-26","score":"3-1","summary":"مباراة مثيرة في الدوري الفرنسي."},
+  {"slug":"zamalek-vs-ismaily","home":"Zamalek","away":"Ismaily","date":"2026-01-27","score":"2-1","summary":"مواجهة مصرية حماسية في الدوري المحلي."},
+  {"slug":"al-ain-vs-shabab-al-ahli","home":"Al Ain","away":"Shabab Al Ahli","date":"2026-01-28","score":"0-0","summary":"ديربي إماراتي انتهى بدون أهداف."},
+  {"slug":"fenerbahce-vs-galatasaray","home":"Fenerbahce","away":"Galatasaray","date":"2026-01-29","score":"1-2","summary":"ديربي تركي مثير وانتهى بفوز جالطة سراي."}
 ]
-
