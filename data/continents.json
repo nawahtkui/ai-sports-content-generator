@@ -1,6 +1,7 @@
 [
+  { "slug": "europe", "name": "أوروبا" },
   { "slug": "asia", "name": "آسيا" },
   { "slug": "africa", "name": "أفريقيا" },
-  { "slug": "europe", "name": "أوروبا" },
-  { "slug": "america", "name": "أمريكا الشمالية والجنوبية" }
+  { "slug": "americas", "name": "الأمريكيتين" },
+  { "slug": "oceania", "name": "أوقيانوسيا" }
 ]
