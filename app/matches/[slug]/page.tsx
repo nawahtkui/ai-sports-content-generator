@@ -10,10 +10,10 @@ export default function MatchPage({ params }: Params) {
   if (!match) return notFound();
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "900px" }}>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif", maxWidth: "800px", margin: "0 auto" }}>
       <h1>{match.home} vs {match.away}</h1>
-      <p><strong>Date:</strong> {match.date}</p>
-      <p><strong>Score:</strong> {match.score}</p>
+      <p><strong>التاريخ:</strong> {match.date}</p>
+      <p><strong>النتيجة:</strong> {match.score}</p>
       <p>{match.summary}</p>
     </main>
   );
